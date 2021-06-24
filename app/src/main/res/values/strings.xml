@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicTribe</string>
+    <string name="graph">Graph</string>
+    <string name="nfc">NFC</string>
+    <string name="options">Options</string>
+    <string name="accelerometer_value">Accelerometer Value :</string>
+    <string name="tag_id_hex">Tag Id (hex) </string>
+    <string name="technology_available">Technology \nAvailable </string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.NFCActivity">
+
+        <include
+            android:id="@+id/tb_nfc"
+            layout="@layout/toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_tagId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@drawable/neo"
+            android:maxHeight="?attr/listPreferredItemHeight"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tb_nfc"
+            tools:layout_editor_absoluteX="8dp">
+
+
+            <TextView
+                android:id="@+id/tv_tagIdTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:text="@string/tag_id_hex"
+                android:textColor="#363636"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tagId"
+                android:layout_width="0dp"
+                android:layout_height="?attr/listPreferredItemHeight"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toEndOf="@+id/tv_tagIdTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="#363636"
+            app:layout_constraintTop_toBottomOf="@+id/cl_tagId" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_technologies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:background="@drawable/neo"
+            android:maxHeight="?attr/listPreferredItemHeight"
+            android:padding="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@+id/line_1"
+            tools:layout_editor_absoluteX="8dp">
+
+
+            <TextView
+                android:id="@+id/tv_technologyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:text="@string/technology_available"
+                android:textColor="#363636"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/technology"
+                android:layout_width="0dp"
+                android:layout_height="?attr/listPreferredItemHeight"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toEndOf="@+id/tv_technologyTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="#363636"
+            app:layout_constraintTop_toBottomOf="@+id/cl_technologies" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
